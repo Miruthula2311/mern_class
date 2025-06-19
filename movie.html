@@ -8,7 +8,7 @@
       padding: 0;
       background-color: #000; /* black background */
       color: #fff; /* white text for contrast */
-      font-family: Verdana, sans-serif;
+      font-family:sans-serif;
     }
 
     /* Netflix-like Navigation Bar */
@@ -64,6 +64,13 @@
       gap: 30px;
       margin-top: 40px;
     }
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      width: 100%;
+    }
 
     .movie-block {
       border: 2px solid #00bfff;
@@ -106,7 +113,7 @@
 
     .desc {
       font-size: 14px;
-      font-style: italic;
+      font-style:sans-serif;
       color: #d0eaff;
       text-align: justify;
       height: 130px;

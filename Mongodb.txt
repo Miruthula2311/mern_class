@@ -1,0 +1,554 @@
+use KEC
+switched to db KEC
+db.createCollection("User")
+{ ok: 1 }
+db.User.insertOne({
+Name : "Miruthula"
+
+
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a260f27a3aecea5724c43')
+}
+db.User.insertOne({
+Name : "Miruthula",
+email: "miruthulas.23eie@kongu.edu",
+age: "27"
+dept: "eie"
+}) 
+SyntaxError: Unexpected token, expected "," (5:0)
+
+[0m [90m 3 |[39m email[33m:[39m [32m"miruthulas.23eie@kongu.edu"[39m[33m,[39m
+ [90m 4 |[39m age[33m:[39m [32m"27"[39m
+[31m[1m>[22m[39m[90m 5 |[39m dept[33m:[39m [32m"eie"[39m
+ [90m   |[39m [31m[1m^[22m[39m
+ [90m 6 |[39m }) [0m
+db.User.insertOne({
+Name : "Miruthula",
+email: "miruthulas.23eie@kongu.edu",
+age: "27",
+dept: "eie"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685a26db27a3aecea5724c44')
+}
+db.User.insertMany([
+  {Name: "sibi",age: "20",email:"sibi@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2b5f27a3aecea5724c45')
+  }
+}
+db.User.insertMany([
+  {Name: "tanu",age: "21",email:"tanu@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2c8227a3aecea5724c46')
+  }
+}
+db.User.insertMany([
+  {Name: "varshini",age: "22",email:"varshini@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2cb127a3aecea5724c47')
+  }
+}
+db.User.insertMany([
+  {Name: "janani",age: "23",email:"janani@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2cc627a3aecea5724c48')
+  }
+}
+db.User.insertMany([
+  {Name: "sibi",age: "20",email:"sibi@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2d9327a3aecea5724c49')
+  }
+}
+db.User.insertMany([
+  {Name: "saurabhi",age: "24",email:"saurabhi@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2dc927a3aecea5724c4a')
+  }
+}
+db.User.insertMany([
+  {Name: "thowbika",age: "25",email:"thowbika@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2de127a3aecea5724c4b')
+  }
+}
+db.User.insertMany([
+  {Name: "sashmitha",age: "26",email:"sashmitha@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2e0027a3aecea5724c4c')
+  }
+}
+db.User.insertMany([
+  {Name: "malavika",age: "27",email:"malavika@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2e1c27a3aecea5724c4d')
+  }
+}
+db.User.insertMany([
+  {Name: "megha",age: "28",email:"megha@gmail.com",dept: "eie"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a2ea527a3aecea5724c4e')
+  }
+}
+db.User.find
+[Function: find] AsyncFunction {
+  returnsPromise: true,
+  apiVersions: [ 1, Infinity ],
+  returnType: 'Cursor',
+  serverVersions: [ '0.0.0', '999.999.999' ],
+  topologies: [ 'ReplSet', 'Sharded', 'LoadBalanced', 'Standalone' ],
+  deprecated: false,
+  platforms: [ 'Compass', 'Browser', 'CLI' ],
+  isDirectShellCommand: false,
+  acceptsRawInput: false,
+  shellCommandCompleter: undefined,
+  help: [Function (anonymous)] Help
+}
+db.User.find()
+{
+  _id: ObjectId('685a26db27a3aecea5724c44'),
+  Name: 'Miruthula',
+  email: 'miruthulas.23eie@kongu.edu',
+  age: '27',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2b5f27a3aecea5724c45'),
+  Name: 'sibi',
+  age: '20',
+  email: 'sibi@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2c8227a3aecea5724c46'),
+  Name: 'tanu',
+  age: '21',
+  email: 'tanu@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2cb127a3aecea5724c47'),
+  Name: 'varshini',
+  age: '22',
+  email: 'varshini@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2cc627a3aecea5724c48'),
+  Name: 'janani',
+  age: '23',
+  email: 'janani@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2dc927a3aecea5724c4a'),
+  Name: 'saurabhi',
+  age: '24',
+  email: 'saurabhi@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2de127a3aecea5724c4b'),
+  Name: 'thowbika',
+  age: '25',
+  email: 'thowbika@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2e0027a3aecea5724c4c'),
+  Name: 'sashmitha',
+  age: '26',
+  email: 'sashmitha@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2e1c27a3aecea5724c4d'),
+  Name: 'malavika',
+  age: '27',
+  email: 'malavika@gmail.com',
+  dept: 'eie'
+}
+{
+  _id: ObjectId('685a2ea527a3aecea5724c4e'),
+  Name: 'megha',
+  age: '28',
+  email: 'megha@gmail.com',
+  dept: 'eie'
+}
+db.user.find({Name:"sibi"})
+db.user.find({Name:"sibi"})
+db.User.find({Name:"sibi"})
+{
+  _id: ObjectId('685a2b5f27a3aecea5724c45'),
+  Name: 'sibi',
+  age: '20',
+  email: 'sibi@gmail.com',
+  dept: 'eie'
+}
+ db.User.find({Name:"sibi"},{$set:{Name:"Sibikha"}})
+MongoServerError[Location16410]: FieldPath field names may not start with '$'. Consider using $getField or $setField.
+ db.User.updateOne({Name:"sibi"},{$set:{Name:"Sibikha"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.User.updateMany({},{$set:{college: "kec"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 10,
+  modifiedCount: 10,
+  upsertedCount: 0
+}
+db.User.find()
+{
+  _id: ObjectId('685a26db27a3aecea5724c44'),
+  Name: 'Miruthula',
+  email: 'miruthulas.23eie@kongu.edu',
+  age: '27',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2b5f27a3aecea5724c45'),
+  Name: 'Sibikha',
+  age: '20',
+  email: 'sibi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2c8227a3aecea5724c46'),
+  Name: 'tanu',
+  age: '21',
+  email: 'tanu@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cb127a3aecea5724c47'),
+  Name: 'varshini',
+  age: '22',
+  email: 'varshini@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cc627a3aecea5724c48'),
+  Name: 'janani',
+  age: '23',
+  email: 'janani@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2dc927a3aecea5724c4a'),
+  Name: 'saurabhi',
+  age: '24',
+  email: 'saurabhi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2de127a3aecea5724c4b'),
+  Name: 'thowbika',
+  age: '25',
+  email: 'thowbika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e0027a3aecea5724c4c'),
+  Name: 'sashmitha',
+  age: '26',
+  email: 'sashmitha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e1c27a3aecea5724c4d'),
+  Name: 'malavika',
+  age: '27',
+  email: 'malavika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2ea527a3aecea5724c4e'),
+  Name: 'megha',
+  age: '28',
+  email: 'megha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+db.User.find().sort({Name: 1})
+{
+  _id: ObjectId('685a26db27a3aecea5724c44'),
+  Name: 'Miruthula',
+  email: 'miruthulas.23eie@kongu.edu',
+  age: '27',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2b5f27a3aecea5724c45'),
+  Name: 'Sibikha',
+  age: '20',
+  email: 'sibi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cc627a3aecea5724c48'),
+  Name: 'janani',
+  age: '23',
+  email: 'janani@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e1c27a3aecea5724c4d'),
+  Name: 'malavika',
+  age: '27',
+  email: 'malavika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2ea527a3aecea5724c4e'),
+  Name: 'megha',
+  age: '28',
+  email: 'megha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e0027a3aecea5724c4c'),
+  Name: 'sashmitha',
+  age: '26',
+  email: 'sashmitha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2dc927a3aecea5724c4a'),
+  Name: 'saurabhi',
+  age: '24',
+  email: 'saurabhi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2c8227a3aecea5724c46'),
+  Name: 'tanu',
+  age: '21',
+  email: 'tanu@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2de127a3aecea5724c4b'),
+  Name: 'thowbika',
+  age: '25',
+  email: 'thowbika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cb127a3aecea5724c47'),
+  Name: 'varshini',
+  age: '22',
+  email: 'varshini@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+db.User.find().sort({Name: 1})
+{
+  _id: ObjectId('685a26db27a3aecea5724c44'),
+  Name: 'Miruthula',
+  email: 'miruthulas.23eie@kongu.edu',
+  age: '27',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2b5f27a3aecea5724c45'),
+  Name: 'Sibikha',
+  age: '20',
+  email: 'sibi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cc627a3aecea5724c48'),
+  Name: 'janani',
+  age: '23',
+  email: 'janani@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e1c27a3aecea5724c4d'),
+  Name: 'malavika',
+  age: '27',
+  email: 'malavika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2ea527a3aecea5724c4e'),
+  Name: 'megha',
+  age: '28',
+  email: 'megha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e0027a3aecea5724c4c'),
+  Name: 'sashmitha',
+  age: '26',
+  email: 'sashmitha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2dc927a3aecea5724c4a'),
+  Name: 'saurabhi',
+  age: '24',
+  email: 'saurabhi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2c8227a3aecea5724c46'),
+  Name: 'tanu',
+  age: '21',
+  email: 'tanu@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2de127a3aecea5724c4b'),
+  Name: 'thowbika',
+  age: '25',
+  email: 'thowbika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cb127a3aecea5724c47'),
+  Name: 'varshini',
+  age: '22',
+  email: 'varshini@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+db.User.find().sort({Name: 1})
+{
+  _id: ObjectId('685a26db27a3aecea5724c44'),
+  Name: 'Miruthula',
+  email: 'miruthulas.23eie@kongu.edu',
+  age: '27',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2b5f27a3aecea5724c45'),
+  Name: 'Sibikha',
+  age: '20',
+  email: 'sibi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cc627a3aecea5724c48'),
+  Name: 'janani',
+  age: '23',
+  email: 'janani@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e1c27a3aecea5724c4d'),
+  Name: 'malavika',
+  age: '27',
+  email: 'malavika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2ea527a3aecea5724c4e'),
+  Name: 'megha',
+  age: '28',
+  email: 'megha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2e0027a3aecea5724c4c'),
+  Name: 'sashmitha',
+  age: '26',
+  email: 'sashmitha@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2dc927a3aecea5724c4a'),
+  Name: 'saurabhi',
+  age: '24',
+  email: 'saurabhi@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2c8227a3aecea5724c46'),
+  Name: 'tanu',
+  age: '21',
+  email: 'tanu@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2de127a3aecea5724c4b'),
+  Name: 'thowbika',
+  age: '25',
+  email: 'thowbika@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+{
+  _id: ObjectId('685a2cb127a3aecea5724c47'),
+  Name: 'varshini',
+  age: '22',
+  email: 'varshini@gmail.com',
+  dept: 'eie',
+  college: 'kec'
+}
+KEC
+
